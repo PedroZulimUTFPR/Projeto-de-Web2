@@ -1,0 +1,385 @@
+/*Estilização global da página*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+/*Estilização do html*/
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+/*Estilização do body*/
+body {
+  background-color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+/*Estilização do wrapper (faz o papel de um container pro body)*/
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+#wrapper > .container {
+  display: flex;
+  padding: 0 8rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 93.5rem;
+  margin: 3rem auto 0;
+}
+
+/*Estilização do smartphone de demonstração*/
+.smartphone-demonstracao {
+  background-image: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+  height: 61.8rem;
+  width: 45.4rem;
+  margin-left: -3.3rem;
+  margin-top: 3.35rem;
+}
+
+.smartphone-demonstracao img {
+  position: relative;
+  top: 96px;
+  right: -148px;
+  height: 43.4rem;
+  width: 24.5rem;
+}
+
+.smartphone-result-text {
+  background-color: transparent;
+  font-size: 2rem;
+  top: 1.7rem;
+  height: 38.2rem;
+  width: 24.3rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  text-align: center;
+}
+
+.text-result {
+  font-weight: normal;
+  font-size: small;
+}
+
+.smartphone-result {
+  background-image: url('./images/layout.jpeg');
+  background-size: contain;
+  background-color: #fafafa;
+  position: relative;
+  top: 97.2px;
+  right: -43.9px;
+  height: 43.2rem;
+  width: 24.3rem;
+}
+
+.smartphone-result-text::-webkit-scrollbar {
+  display: none;
+}
+
+.smartphone-result li {
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-align: left;
+  list-style-type: none;
+  color: black;
+}
+
+h1.error {
+  color: red;
+}
+
+h1.success {
+  color: green;
+}
+
+/*Estilização da imagem interna do smartphone de demonstração*/
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.imgResult {
+  height: 1rem;
+  width: 1rem;
+}
+
+/*Estilização de links*/
+a {
+  text-decoration: none;
+}
+
+/*Estilização do form de login*/
+.form-login {
+  width: 100%;
+  max-width: 35rem;
+  margin-left: -1.35rem;
+  margin-top: 6.6rem;
+}
+
+.form-login form {
+  background-color: #fff;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+/*Estilização do form de login > LOGOTIPO*/
+h1 {
+  height: 5.1rem;
+  width: 17.5rem;
+  margin: auto;
+  position: relative;
+}
+
+.logotipo h1 {
+  background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+  background-position: 0 -130px;
+  margin-bottom: 2.5rem;
+  margin-top: 1.3rem;
+  margin-left: 4.5rem;
+}
+
+/*Estilização do form de login > INPUT*/
+.form-login form input {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #eee;
+  border-radius: 0.2rem;
+}
+
+.form-login form input.erroLogin {
+  background-color: red;
+}
+
+.form-login form input.erroLogin::placeholder {
+  color: black;
+}
+
+/*Estilização do form de login > BUTTON*/
+.form-login-botao {
+  margin: 1rem 0 1.5rem;
+  height: 3rem;
+  background-color: #3897f0;
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+/*Estilização do form de consulta*/
+.formFilters {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #eee;
+  border-radius: 0.2rem;
+}
+
+/*Estilização do separador "OU"*/
+.separador {
+  font-size: 1.3rem;
+  color: rgba(var(--b6a, 219, 219, 219), 1);
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.separador::before,
+.separador::after {
+  content: '';
+  position: absolute;
+  background-color: #eee;
+  width: 40%;
+  height: 1.5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.separador::before {
+  left: 0;
+}
+
+.separador::after {
+  right: 0;
+}
+
+/*Estilização "Entrar com o Facebook"*/
+.entrar-com-facebook {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #385185;
+  margin-bottom: 2.5rem;
+}
+
+.entrar-com-facebook i {
+  font-size: 2rem;
+  margin-right: 0.7rem;
+}
+
+.entrar-com-facebook .facebookLogotipo {
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+  background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+  background-position: -414px -259px;
+  height: 16px;
+  width: 16px;
+}
+
+/*Estilização "Esqueceu a senha?"*/
+.esqueceu-senha {
+  font-size: 1.2rem;
+  color: #003569;
+}
+
+/*Estilização "Cadastre-se"*/
+.cadastre-se {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #262626;
+  padding: 2rem 0;
+  background-color: #fff;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  margin: 1rem 0;
+}
+
+.cadastre-se a {
+  color: #3897f0;
+  font-weight: bold;
+}
+
+/*Estilização "Obtenha o aplicativo." (App Store e Google Play)*/
+.obtenha-aplicativo {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.obtenha-aplicativo span {
+  display: block;
+  margin: 2rem 0;
+  color: #262626;
+}
+
+.app-store-google-play {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.app-store-google-play img {
+  max-width: 14rem;
+  cursor: pointer;
+}
+
+.app-store-google-play img:first-child {
+  margin-right: 1rem;
+}
+
+/*Estilização do footer*/
+footer {
+  padding: 5rem 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+  margin-top: 0;
+  max-width: 70rem;
+}
+
+.footer-navegacao ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.footer-navegacao ul li {
+  margin-right: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+.footer-navegacao ul li a {
+  color: #8e8e8e;
+}
+
+.direito-autoral {
+  color: #8e8e8e;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/*Estilizaçao responsividade*/
+@media (max-width: 875px) {
+  .smartphone-demonstracao {
+    display: none;
+  }
+
+  .form-login {
+    margin: 0 auto;
+  }
+
+  #wrapper > .container {
+    padding: 0;
+  }
+
+  footer .container {
+    padding: 0 2rem;
+    justify-content: center;
+  }
+
+  .footer-navegacao ul {
+    justify-content: center;
+  }
+
+  .footer-navegacao ul li {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  #wrapper {
+    padding-top: 0;
+  }
+
+  .form-login form {
+    background-color: transparent;
+    border: none;
+    padding: 0 2rem;
+  }
+
+  .cadastre-se {
+    background-color: transparent;
+    border: none;
+    margin: 4rem 0;
+  }
+
+  footer {
+    padding-bottom: 2rem;
+  }
+}
